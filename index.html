@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexedil</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/includes/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+        <section class="header__content">
+            <div class="logo">
+                <img src="img/logo.svg" alt="флекседил">
+            </div>
+            <h1>Flexedil — капсулы для лечения суставов</h1>
+            <ul class="header__worth">
+                <li class="header__item">
+                    Избавляет от боли за <span class="term"> 1 день</span>
+                </li>
+                <li class="header__item">
+                    Восстанавливает хрящевую ткань 
+                </li>
+                <li class="header__item">
+                    Здоровые суставы за <span class="term">28 дней</span>
+                </li>
+                <li class="header__item">
+                    Снимает воспаление и отечность
+                </li>
+            </ul>
+            <ul class="header__features">
+                <li class="header__feature">
+                    <img src="img/feature-1.png" alt="без гмо">
+                </li>
+                <li class="header__feature">
+                    <img src="img/feature-2.png" alt="сертефикат iso">
+                </li>
+                <li class="header__feature">
+                    <img src="img/feature-3.png" alt="100% натурально">
+                </li>
+                <li class="header__feature">
+                    <img src="img/feature-4.png" alt="рекомендовано">
+                </li>
+            </ul>
+        </section>
+        <section class="header__form">
+            <h2 style="display: none;">Форма для заказа</h2>
+            <form  action="" method="post" class="header__order">
+                <div class="form__picture">
+                    <img src="./img/medicine-picture.png" alt="препарат flexedil">
+                </div>
+                <div class="form__sale">Скидка <span>70% </span> до 10 июня</div>
+                <div class="form__price">ЦЕНА:<span>20 руб.</span></div>
+                <select>
+                    <option>Беларусь</option>
+                    <option>Россия</option>
+                    <option>Украина</option>
+                </select>
+                <input class="form__name" name="name" type="text" class="mr-auto" placeholder="Имя" required>
+                <input class="form__tel" type="tel" name="tel" placeholder="Телефон" >
+                <button class="form__btn" type="submit" id="form-submit" class="submit-btn">купить <img src="./img/form-btn.svg"></button>
+                <div class="form__remainder">Осталось <span class="num-pack">8 упаковок</span></div>
+            </form>
+        </section>
+  </header>  
+</body>
+</html>

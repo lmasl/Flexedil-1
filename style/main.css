@@ -1,0 +1,179 @@
+
+body {
+    font-family: 'Lato', sans-serif;;
+    font-size: 32px;
+    color: #fff;
+    box-sizing: content-box;  
+}
+
+header {
+    background-image:linear-gradient(90deg, #004D87 0%, rgba(0, 77, 135, 0) 100%), url(../img/men-header-bg.png), url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover, contain, cover;
+    background-position: 0% 0%, 50% bottom, 0% 0%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 50px 95px;
+}
+h1 {
+    font-size: 40px; 
+    padding: 50px auto; 
+}
+.header__content .header__worth{
+    list-style-image: url(../img/header-marker.png);
+}
+.header__item {
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+.header__item .term {
+    font-size: 44px;
+    font-weight: 700;
+    color: #5BFF27;
+}
+.header__content .header__features {
+    list-style-type: none;
+    
+}
+.header__feature {
+    display: inline-block;
+    padding:10px
+}
+.header__form {
+    padding-top: 100px;
+}
+form {
+    background-color:#FFFFFF;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 130px 20px 50px 20px;
+    width: 385px;
+
+}
+.form__picture {
+    position: absolute;
+    top: 70px;
+   
+}
+.form__sale {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 40px auto;
+    margin-top:30px;
+}
+.form__sale span {
+   font-size: 36px; 
+}
+.form__price {
+    font-size: 24px;
+    font-style: uppercase;
+    font-weight: 900;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.form__price span {
+    font-size: 44px;
+    color: #F03500;
+    padding-left: 10px;
+}
+select {
+    background:url(../img/form-country.svg) no-repeat left;
+    box-sizing:border-box;
+    width: 80%;
+    border:none;
+    border-bottom:1px solid #757575;
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 25px;
+}
+input {
+    background-color:#FFFFFF;
+    box-sizing:border-box;
+    width: 80%;
+    border:none;
+    border-bottom:1px solid #757575;
+    font-size: 16px;
+    color: #000000;
+    padding: 10px 25px;
+    margin-top: 30px;
+    
+}
+.form__name {
+    background:url(../img/form-name.svg) no-repeat left;
+}
+.form__tel {
+    background:url(../img/form-phone.svg) no-repeat left;
+}
+input:focus {
+    outline:none;
+    border-bottom:1px solid #EB410D;
+}
+select:focus {
+    outline:none;
+    border-bottom:1px solid #EB410D;
+}
+.form__btn {
+    background: #EB410D;
+    box-shadow: 0px 4px 16px #E86201;
+    box-sizing:border-box;
+    width: 80%;
+    height: 80px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0px 10px;
+    margin-top: 30px; 
+   
+}
+.form__btn img{
+    padding-left: 10px;
+}
+.form__btn:hover {
+    background: #5BFF27;
+    box-shadow: 0px 4px 16px #47a11d;
+}
+.form__remainder { 
+    font-size: 16px;
+    color: #000000;
+    margin-top: 30px;
+}
+@media all and (max-width: 768px) {
+    header {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .header__content {
+        padding: 50px 30px;
+    }
+    .header__form {
+        margin-top: 70px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .form__picture {
+        top: 80%;
+    }
+    .form__sale {
+        margin-top: 0px;
+    }
+    .header__order {
+        padding: 80px 20px 50px 20px;
+    }
+}
