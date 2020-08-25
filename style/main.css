@@ -177,3 +177,52 @@ select:focus {
         padding: 80px 20px 50px 20px;
     }
 }
+@media all and (max-width: 460px) {
+    header {
+        display:flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+    .header__content {
+        padding: 30px 10px 30px 25px;
+    }
+    .header__content .logo img {
+        width: 150px;
+    }
+    .header__content h1 {
+        font-size: 32px;
+    }
+    .header__worth .header__item{
+        font-size: 16px; 
+        padding-bottom: 10px;
+    }
+    .header__item .term {
+        font-size: 24px;
+        font-weight: 700;
+        color: #5BFF27;
+        padding-left: 5px;
+    }
+    .header__features {
+        padding-inline-start: 0px;
+    }
+    .header__feature img {
+        width: 60px;
+        height: 60px;
+    }
+    .header__form {
+        margin-top: 70px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .form__picture {
+        top: 75%;
+    }
+    .form__sale {
+        margin-top: 0px;
+    }
+    .header__order {
+        padding: 80px 20px 50px 20px;
+    }
+}
