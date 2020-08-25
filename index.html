@@ -10,59 +10,61 @@
 </head>
 <body>
   <header>
-        <section class="header__content">
+        <div class="header__content">
             <div class="logo">
-                <img src="img/logo.svg" alt="флекседил">
+                <img src="img/logo.svg" alt="логотип 'Флекседил'">
             </div>
             <h1>Flexedil — капсулы для лечения суставов</h1>
-            <ul class="header__worth">
-                <li class="header__item">
+            <ul class="worth">
+                <li class="worth__item">
                     Избавляет от боли за <span class="term"> 1 день</span>
                 </li>
-                <li class="header__item">
+                <li class="worth__item">
                     Восстанавливает хрящевую ткань 
                 </li>
-                <li class="header__item">
+                <li class="worth__item">
                     Здоровые суставы за <span class="term">28 дней</span>
                 </li>
-                <li class="header__item">
+                <li class="worth__item">
                     Снимает воспаление и отечность
                 </li>
             </ul>
-            <ul class="header__features">
-                <li class="header__feature">
+            <ul class="features">
+                <li class="feature__item">
                     <img src="img/feature-1.png" alt="без гмо">
                 </li>
-                <li class="header__feature">
+                <li class="feature__item">
                     <img src="img/feature-2.png" alt="сертефикат iso">
                 </li>
-                <li class="header__feature">
+                <li class="feature__item">
                     <img src="img/feature-3.png" alt="100% натурально">
                 </li>
-                <li class="header__feature">
+                <li class="feature__item">
                     <img src="img/feature-4.png" alt="рекомендовано">
                 </li>
             </ul>
-        </section>
-        <section class="header__form">
-            <h2 style="display: none;">Форма для заказа</h2>
+        </div>
+        <div class="header__form">
+            <h2 >Форма для заказа</h2>
             <form  action="" method="post" class="header__order">
                 <div class="form__picture">
                     <img src="./img/medicine-picture.png" alt="препарат flexedil">
                 </div>
-                <div class="form__sale">Скидка <span>70% </span> до 10 июня</div>
-                <div class="form__price">ЦЕНА:<span>20 руб.</span></div>
+                <div class="form__sale">Скидка <span class="form__sale percent">70% </span> до <span id="actual-date">10 июня</span></div>
+                <div class="form__price">ЦЕНА:<span class="tot-amount">20</span> <span class="init_price-txt">руб</span></div>
                 <select>
                     <option>Беларусь</option>
                     <option>Россия</option>
                     <option>Украина</option>
                 </select>
-                <input class="form__name" name="name" type="text" class="mr-auto" placeholder="Имя" required>
-                <input class="form__tel" type="tel" name="tel" placeholder="Телефон" >
-                <button class="form__btn" type="submit" id="form-submit" class="submit-btn">купить <img src="./img/form-btn.svg"></button>
-                <div class="form__remainder">Осталось <span class="num-pack">8 упаковок</span></div>
+                <input class="form__name" name="name" pattern=".*\S.*" title="Поле имени не должно быть пустым" required placeholder="Ваше имя">
+                <input class="form__tel" type="tel" name="telephone" pattern=".{7,20}" maxlength="20" required title="Более 7 символов"  placeholder="Номер телефона" >
+                <button class="form__btn" type="submit" id="form-submit" class="submit-btn button"><span class="btn__text">купить </span></button>
+                <div class="form__remainder">Осталось <span class="remaining">8 <span class="remaining_text">упаковок</span></span></div>
             </form>
-        </section>
+        </div>
   </header>  
+
+  <script src="./js/index.js"></script>
 </body>
 </html>
